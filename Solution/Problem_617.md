@@ -7,7 +7,7 @@ You need to merge them into a new binary tree. The merge rule is that if two nod
 ## **Example**
 
 **Input:** 
-	   Tree 1                     Tree 2                  
+	Tree 1                    Tree 2                  
           1                         2                             
          / \                       / \                            
         3   2                     1   3                        
