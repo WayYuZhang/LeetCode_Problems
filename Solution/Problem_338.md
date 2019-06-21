@@ -55,12 +55,14 @@ Given a non negative integer number **num**. For every numbers **i** in the rang
     
 ### THREE
 
-    public int[] countBits(int num) {
-        int[] res = new int[num + 1];
-        for(int i = 1; i <= num; i++) {
-            res[i] = res[i >> 1] + (i & 1);
+    class Solution {
+        public int[] countBits(int num) {
+            int[] res = new int[num + 1];
+            for(int i = 1; i <= num; i++) {
+                res[i] = res[i >> 1] + (i & 1);
+            }
+            return res;
         }
-        return res;
     }
 
 ## **Note**
