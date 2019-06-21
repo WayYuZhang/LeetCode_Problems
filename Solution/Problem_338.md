@@ -24,7 +24,6 @@ Given a non negative integer number **num**. For every numbers **i** in the rang
         public int[] countBits(int num) {
             int[] res = new int[num + 1];
             int pow = 1;
-            res[0] = 0;
             for(int i = 1, t = 0; i <= num; i++, t++) {
                 if(pow == i) {
                     pow *= 2;
@@ -41,7 +40,6 @@ Given a non negative integer number **num**. For every numbers **i** in the rang
     class Solution {
         public int[] countBits(int num) {
             int[] res = new int[num + 1];
-            res[0] = 0;
             helper(num, 1, 1, res);
             return res;
         }
@@ -53,6 +51,16 @@ Given a non negative integer number **num**. For every numbers **i** in the rang
             helper(num, cur << 1, count, res);
             helper(num, (cur << 1) + 1, count + 1, res);
         }
+    }
+    
+### THREE
+
+    public int[] countBits(int num) {
+        int[] res = new int[num + 1];
+        for(int i = 1; i <= num; i++) {
+            res[i] = res[i >> 1] + (i & 1);
+        }
+        return res;
     }
 
 ## **Note**
