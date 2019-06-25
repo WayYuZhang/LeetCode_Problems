@@ -48,14 +48,24 @@ For example, given the list of temperatures `T = [73, 74, 75, 71, 69, 72, 76, 7
 
 ## **Note**
 
-Modifier and Type	    Method and Description
+Method for Stack()
 
-boolean	**empty()**         Tests if this stack is empty.
++ **empty()**
 
-E	**peek()**              Looks at the object at the top of this stack without removing it from the stack.
+Tests if this stack is empty.
 
-E	**pop()**               Removes the object at the top of this stack and returns that object as the value of this function.
++ **peek()**
 
-E	**push(E item)**        Pushes an item onto the top of this stack.
+Looks at the object at the top of this stack without removing it from the stack.
 
-int	**search(Object o)**    Returns the 1-based position where an object is on this stack.
++ **pop()**
+
+Removes the object at the top of this stack and returns that object as the value of this function.
+
++ **push(E item)**
+
+Pushes an item onto the top of this stack.
+
++ **search(Object o)**
+
+Returns the 1-based position where an object is on this stack.
