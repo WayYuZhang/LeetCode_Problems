@@ -67,3 +67,28 @@ For example, given _n_ = 3, a solution set is:
 
 ## **Note**
 
+**Method for StringBuilder()**
+
++ append(args)
+
+Appends the string representation of the argument *args* to this sequence.
+
++ capacity()
+
+Returns the current capacity.
+
++ charAt(int index)
+
+Returns the char value in this sequence at the specified index.
+
++ deleteCharAt(int index)
+
+Removes the char at the specified position in this sequence.
+
++ length()
+
+Returns the length (character count).
+
++ toString()
+
+Returns a string representing the data in this sequence.
